@@ -676,23 +676,29 @@ span.copyright {
 }
 
 #diamond i{
-    font-size: 200%;
+    /*font-size: 200%;*/
+    font-size: 600%;
     font-style: normal;
     display: block;
     font-family: 'Roboto', sans-serif;
     color: #45b29a;
+    transform: rotate(90deg);
 }
 #diamond{
     position: sticky;
     top: 370px;
-    margin-top: -12px;
-    margin-bottom: -10px;
-    margin-left: -0.85rem;
+    /*margin-top: -12px;*/
+    /*margin-bottom: -10px;*/
+    /*margin-left: -0.85rem;*/
+    margin-top: -85px;
+    margin-bottom: -5px;
+    margin-left: 0.455rem;
     z-index: 2;
 }
 
 .diamond-slider:before {
-    content: "\2666";
+    /*content: "\2666";*/
+    content: "\2708";
 }
 
 #box-2{
