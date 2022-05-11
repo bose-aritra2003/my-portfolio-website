@@ -235,7 +235,7 @@ hr {
     border-style: dotted none none none;
     border-color: rgb(244, 242, 241);
     border-width: 10px;
-    width: 5%;
+    width: 75px;
 }
 
 .top-cloud {
@@ -289,6 +289,13 @@ a:hover {
     width: 50%;
     margin: 100px auto 100px auto;
     text-align: left;
+    line-height: 1.42857143;
+}
+
+.contact-me {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: center;
     line-height: 1.42857143;
 }
 
@@ -401,10 +408,10 @@ a:hover {
 
 p.copyright {
     color: #45b29a;
+    width: 50%;
     font-size: 0.8rem;
     font-weight: lighter;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 60px auto 20px auto;
 }
 
 span.copyright {
