@@ -38,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background: #F6F9F8;
     color: #80807f;
     font-family: 'Playfair Display', serif;
     font-weight: lighter;
@@ -242,35 +243,206 @@ hr {
 /* Clouds */
 .right-cloud {
     position: absolute;
-    transform: scaleX(1.5);
-    width: 100px;
+    width: 150px;
     right: 300px;
     /*top: 60px;*/
     z-index: -0.5;
-    -webkit-animation: float-right 5s linear infinite;
+    animation: float-right 5s linear infinite;
 }
 
 .left-cloud {
     position: absolute;
-    transform: scaleX(1.5);
-    width: 100px;
+    width: 150px;
     left: 320px;
     z-index: -0.5;
     /*bottom: 370px;*/
-    -webkit-animation: float-left 4s linear infinite;
+    animation: float-left 5s linear infinite;
 }
 
-@-webkit-keyframes float-right {
-    0% {top: 60px;}
+@keyframes float-right {
+    0% {top: 55px;}
     50% {top: 80px;}
-    100% {top: 60px;}
+    100% {top: 55px;}
 }
 
-@-webkit-keyframes float-left {
-    0% {bottom: 370px;}
+@keyframes float-left {
+    0% {bottom: 365px;}
     50% {bottom: 390px;}
-    100% {bottom: 370px;}
+    100% {bottom: 365px;}
 }
+/* Clouds end */
+
+/* Birds */
+.bird {
+    background-image: url(../assets/birds.svg);
+    background-size: auto 100%;
+    width: 88px;
+    height: 125px;
+    will-change: background-position;
+    animation-name: fly-cycle;
+    animation-timing-function: steps(10);
+    animation-iteration-count: infinite;
+}
+.bird--one {
+    animation-duration: 1s;
+    animation-delay: -0.5s;
+}
+.bird--two {
+    animation-duration: 0.9s;
+    animation-delay: -0.75s;
+}
+.bird--three {
+    animation-duration: 1.25s;
+    animation-delay: -0.25s;
+}
+.bird--four {
+    animation-duration: 1.1s;
+    animation-delay: -0.5s;
+}
+
+.bird-container {
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    transform: scale(0) translateX(-10vw);
+    will-change: transform;
+    animation-name: fly-right-one;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.bird-container--one {
+    animation-duration: 15s;
+    animation-delay: 0s;
+}
+.bird-container--two {
+    animation-duration: 16s;
+    animation-delay: 1s;
+}
+.bird-container--three {
+    animation-duration: 14.6s;
+    animation-delay: 9.5s;
+}
+.bird-container--four {
+    animation-duration: 16s;
+    animation-delay: 10.25s;
+}
+
+@keyframes fly-cycle {
+    100% {
+        background-position: -900px 0;
+    }
+}
+
+@keyframes fly-cycle {
+    100% {
+        background-position: -900px 0;
+    }
+}
+@keyframes fly-right-one {
+    0% {
+        transform: scale(0.5) translateX(-10vw);
+    }
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.6);
+    }
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.7);
+    }
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.8);
+    }
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.8);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.8);
+    }
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.8);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.8);
+    }
+}
+@keyframes fly-right-one {
+    0% {
+        transform: scale(0.5) translateX(-10vw);
+    }
+    10% {
+        transform: translateY(2vh) translateX(10vw) scale(0.6);
+    }
+    20% {
+        transform: translateY(0vh) translateX(30vw) scale(0.7);
+    }
+    30% {
+        transform: translateY(4vh) translateX(50vw) scale(0.8);
+    }
+    40% {
+        transform: translateY(2vh) translateX(70vw) scale(0.8);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.8);
+    }
+    60% {
+        transform: translateY(0vh) translateX(110vw) scale(0.8);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.8);
+    }
+}
+@keyframes fly-right-two {
+    0% {
+        transform: translateY(-2vh) translateX(-10vw) scale(0.7);
+    }
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.6);
+    }
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.8);
+    }
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.65);
+    }
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.7);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.65);
+    }
+    51% {
+        transform: translateY(0vh) translateX(110vw) scale(0.65);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.65);
+    }
+}
+@keyframes fly-right-two {
+    0% {
+        transform: translateY(-2vh) translateX(-10vw) scale(0.7);
+    }
+    10% {
+        transform: translateY(0vh) translateX(10vw) scale(0.6);
+    }
+    20% {
+        transform: translateY(-4vh) translateX(30vw) scale(0.8);
+    }
+    30% {
+        transform: translateY(1vh) translateX(50vw) scale(0.65);
+    }
+    40% {
+        transform: translateY(-2.5vh) translateX(70vw) scale(0.7);
+    }
+    50% {
+        transform: translateY(0vh) translateX(90vw) scale(0.65);
+    }
+    51% {
+        transform: translateY(0vh) translateX(110vw) scale(0.65);
+    }
+    100% {
+        transform: translateY(0vh) translateX(110vw) scale(0.65);
+    }
+}
+/* Birds end */
 
 a {
     text-decoration: none;
@@ -365,8 +537,6 @@ a:hover {
     text-decoration: none;
     margin: 2rem 0 0;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
     font-weight: normal;
     border: 0;
     font-family: 'Roboto', sans-serif;
