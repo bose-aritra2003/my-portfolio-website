@@ -1,3 +1,5 @@
+// Copyright (C) 2022  Aritra Bose. All rights reserved.
+
 const slideIndex = new Array(3);
 slideIndex[0]=1;
 slideIndex[1]=1;

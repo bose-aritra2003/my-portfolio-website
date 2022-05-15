@@ -1,3 +1,5 @@
+// Copyright (C) 2022  Aritra Bose. All rights reserved.
+
 const cursor = document.querySelector(".cursor");
 
 window.addEventListener("mousemove", (e) => {

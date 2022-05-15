@@ -9,3 +9,6 @@ This is my portfolio website compeletely made from scratch by me.
 <br>
 
 Development in progress . . . Stay Tuned !
+<br>
+
+Copyright (C) 2022 Aritra Bose. All rights reserved.
