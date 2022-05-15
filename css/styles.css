@@ -186,7 +186,7 @@ span {
 
 .bottom-container {
     background-color: #c5ded7;
-    padding-top: 20px;
+    padding: 20px;
     user-select: none;
 }
 
@@ -238,19 +238,19 @@ hr {
     width: 75px;
 }
 
-.top-cloud {
+.right-cloud {
     position: absolute;
     transform: scaleX(1.5);
     width: 100px;
     right: 300px;
-    top: 70px;
+    top: 60px;
 }
 
-.bottom-cloud {
+.left-cloud {
     position: absolute;
     transform: scaleX(1.5);
     width: 100px;
-    left: 300px;
+    left: 320px;
     bottom: 370px;
 }
 
