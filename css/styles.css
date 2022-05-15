@@ -238,12 +238,15 @@ hr {
     width: 75px;
 }
 
+/* Clouds */
 .right-cloud {
     position: absolute;
     transform: scaleX(1.5);
     width: 100px;
     right: 300px;
-    top: 60px;
+    /*top: 60px;*/
+    z-index: -0.5;
+    -webkit-animation: float-right 5s linear infinite;
 }
 
 .left-cloud {
@@ -251,12 +254,23 @@ hr {
     transform: scaleX(1.5);
     width: 100px;
     left: 320px;
-    bottom: 370px;
+    z-index: -0.5;
+    /*bottom: 370px;*/
+    -webkit-animation: float-left 4s linear infinite;
 }
 
-@keyframes floatIn {
-    from {}
+@-webkit-keyframes float-right {
+    0% {top: 60px;}
+    50% {top: 80px;}
+    100% {top: 60px;}
 }
+
+@-webkit-keyframes float-left {
+    0% {bottom: 370px;}
+    50% {bottom: 390px;}
+    100% {bottom: 370px;}
+}
+/* Clouds */
 
 a {
     text-decoration: none;
@@ -733,6 +747,7 @@ span.copyright {
     font-size: 1.2rem;
 }
 
+/* Waves */
 .waves {
     position:relative;
     width: 100%;
@@ -743,8 +758,6 @@ span.copyright {
     min-height:100px;
     max-height:150px;
 }
-/* Animation */
-
 .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
 }
