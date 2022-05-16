@@ -38,7 +38,8 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background: #F6F9F8;
+    /*background: #F6F9F8;*/
+    background: white;
     color: #80807f;
     font-family: 'Playfair Display', serif;
     font-weight: lighter;
@@ -99,8 +100,7 @@ body {
 }
 
 .navbar {
-    background-color: rgb(197, 222, 215);
-    backdrop-filter: blur(4px);
+    background-color: #c5ded7;
     padding: 50px 250px 50px 250px;
     text-align: right;
     user-select: none;
@@ -235,7 +235,7 @@ h5 {
 
 hr {
     border-style: dotted none none none;
-    border-color: rgb(238, 236, 235);
+    border-color: rgb(244, 242, 241);
     border-width: 10px;
     width: 90px;
 }
@@ -274,7 +274,7 @@ hr {
 
 /* Birds */
 .bird {
-    background-image: url(../assets/birds.svg);
+    background-image: url(../assets/decoration/birds.svg);
     background-size: auto 100%;
     width: 88px;
     height: 125px;
@@ -459,25 +459,6 @@ a:hover {
     color: #1e836c;
 }
 
-.code-img {
-    width: 25%;
-    float: left;
-    margin-right: 80px;
-}
-
-.psd-img {
-    width: 20%;
-    float: right;
-    margin-left: 50px;
-}
-
-.skill-row {
-    width: 60%;
-    margin: 100px auto 100px auto;
-    text-align: left;
-    line-height: 1.42857143;
-}
-
 .contact-me {
     width: 60%;
     margin: 100px auto 100px auto;
@@ -496,19 +477,116 @@ a:hover {
     font-weight: normal;
 }
 
-.skills, .education {
+.education, .skill-levels {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.contact-me {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.about, .skill-desc {
+.about {
     font-size: 1.2rem;
 }
+
+/* Skill levels */
+.skill-levels {
+    width: 60%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 1.42857143;
+}
+
+.skill-logo {
+    width: 3.5rem;
+    float: left;
+    margin-right: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.skill-levels-header {
+    margin-top: 85px;
+    text-align: center;
+}
+
+.skill-levels li {
+    margin: 20px 0;
+}
+
+.bar {
+    background: #e0ebe8;
+    display: block;
+    height: 5px;
+    border-radius: 8px;
+    margin-top: -10px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.bar span {
+    height: 5px;
+    float: left;
+    background: #45b29a;
+}
+
+.python {
+    width: 60%;
+    animation: python 2s;
+}
+.cpp {
+    width: 50%;
+    animation: cpp 2s;
+}
+.html {
+    width: 20%;
+    animation: html 2s;
+}
+.css {
+    width: 20%;
+    animation: css 2s;
+}
+.mysql {
+    width: 30%;
+    animation: mysql 2s;
+}
+.photoshop {
+    width: 30%;
+    animation: photoshop 2s;
+}
+.javascript {
+    width: 10%;
+    animation: javascript 2s;
+}
+
+@keyframes python {
+    0% {width: 0;}
+    100% {width: 60%}
+}
+@keyframes cpp {
+    0% {width: 0;}
+    100% {width: 50%}
+}
+@keyframes html {
+    0% {width: 0;}
+    100% {width: 20%}
+}
+@keyframes css {
+    0% {width: 0;}
+    100% {width: 20%}
+}
+@keyframes mysql {
+    0% {width: 0;}
+    100% {width: 30%}
+}
+@keyframes photoshop {
+    0% {width: 0;}
+    100% {width: 30%}
+}
+@keyframes javascript {
+    0% {width: 0;}
+    100% {width: 10%}
+}
+/* Skill levels end */
 
 .profile-img {
     width: 25%;
@@ -826,10 +904,6 @@ a.copyright {
     to {opacity: 1}
 }
 
-
-
-
-
 /*Education*/
 
 .education {
@@ -843,13 +917,13 @@ a.copyright {
     min-height: 150px;
 }
 
-#box-1{
+.box-1{
     position: relative;
     left: 6%;
     top: 3rem;
     text-align: right;
 }
-#logo-1{
+.logo-1{
     position: relative;
     left: 9rem;
     bottom: 9rem;
@@ -874,28 +948,28 @@ a.copyright {
     margin: -0.5rem 0 -0.5rem -1.86rem;
 }
 
-#box-2{
+.box-2{
     margin-top: 5%;
     position: relative;
     left: 53%;
     bottom: 8rem;
     text-align: left;
 }
-#logo-2 {
+.logo-2 {
     position: relative;
     right: 9rem;
     bottom: 20rem;
     width: 13%;
 }
 
-#box-3{
+.box-3{
     margin-top: 5%;
     position: relative;
     left: 6%;
     bottom: 19rem;
     text-align: right;
 }
-#logo-3 {
+.logo-3 {
     position: relative;
     left: 9rem;
     bottom: 32rem;
@@ -905,6 +979,7 @@ a.copyright {
 .school {
     font-size: 1.2rem;
 }
+/* Education end */
 
 /* Waves */
 .waves {
@@ -944,3 +1019,4 @@ a.copyright {
         transform: translate3d(85px,0,0);
     }
 }
+/* Waves end */
