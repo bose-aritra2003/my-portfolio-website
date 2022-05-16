@@ -237,7 +237,7 @@ hr {
     border-style: dotted none none none;
     border-color: rgb(238, 236, 235);
     border-width: 10px;
-    width: 98px;
+    width: 90px;
 }
 
 /* Clouds */
@@ -593,6 +593,7 @@ a:hover {
 p.copyright {
     color: #45b29a;
     width: 50%;
+    font-family: serif;
     font-size: 0.8rem;
     font-weight: lighter;
     margin: 70px auto 10px auto;
