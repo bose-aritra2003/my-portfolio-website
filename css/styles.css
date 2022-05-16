@@ -235,9 +235,9 @@ h5 {
 
 hr {
     border-style: dotted none none none;
-    border-color: rgb(244, 242, 241);
+    border-color: rgb(238, 236, 235);
     border-width: 10px;
-    width: 75px;
+    width: 98px;
 }
 
 /* Clouds */
@@ -472,21 +472,21 @@ a:hover {
 }
 
 .skill-row {
-    width: 50%;
+    width: 60%;
     margin: 100px auto 100px auto;
     text-align: left;
     line-height: 1.42857143;
 }
 
 .contact-me {
-    width: 50%;
+    width: 60%;
     margin: 100px auto 100px auto;
     text-align: center;
     line-height: 1.42857143;
 }
 
 .profile, .projects {
-    width: 50%;
+    width: 60%;
     margin: 100px auto 100px auto;
     line-height: 1.42857143;
 }
