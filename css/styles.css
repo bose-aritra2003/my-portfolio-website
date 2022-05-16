@@ -590,6 +590,7 @@ a:hover {
     top: 30px
 }
 
+/* Copyright */
 p.copyright {
     color: #45b29a;
     width: 50%;
@@ -603,6 +604,11 @@ span.copyright {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+
+a.copyright {
+    font-weight: lighter;
+}
+/* Copyright ends */
 
 .code-projects-title::selection{
     background: #A7613F;
