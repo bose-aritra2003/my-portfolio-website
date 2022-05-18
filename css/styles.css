@@ -247,7 +247,7 @@ hr {
     right: 300px;
     /*top: 60px;*/
     z-index: -0.5;
-    animation: float-right 5s linear infinite;
+    animation: float-right 4s linear infinite;
 }
 
 .left-cloud {
@@ -256,7 +256,7 @@ hr {
     left: 320px;
     z-index: -0.5;
     /*bottom: 370px;*/
-    animation: float-left 5s linear infinite;
+    animation: float-left 4s linear infinite;
 }
 
 @keyframes float-right {
