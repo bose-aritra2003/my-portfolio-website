@@ -530,61 +530,69 @@ ul {
 }
 
 .python {
-    width: 60%;
+    width: 70%;
     animation: python 2s;
 }
 .cpp {
-    width: 50%;
+    width: 60%;
     animation: cpp 2s;
 }
+.git {
+    width: 60%;
+    animation: git 2s;
+}
 .html {
-    width: 20%;
+    width: 30%;
     animation: html 2s;
 }
 .css {
-    width: 20%;
+    width: 30%;
     animation: css 2s;
 }
 .mysql {
-    width: 30%;
+    width: 40%;
     animation: mysql 2s;
 }
 .photoshop {
-    width: 30%;
+    width: 40%;
     animation: photoshop 2s;
 }
 .javascript {
-    width: 10%;
+    width: 20%;
     animation: javascript 2s;
 }
 
 @keyframes python {
     0% {width: 0;}
-    100% {width: 60%}
+    100% {width: 70%}
 }
 @keyframes cpp {
     0% {width: 0;}
-    100% {width: 50%}
+    100% {width: 60%}
+}
+@keyframes git {
+    0% {width: 0;}
+    100% {width: 60%}
 }
 @keyframes html {
     0% {width: 0;}
-    100% {width: 20%}
+    100% {width: 30%}
 }
 @keyframes css {
     0% {width: 0;}
-    100% {width: 20%}
+    100% {width: 30%}
 }
 @keyframes mysql {
     0% {width: 0;}
-    100% {width: 30%}
+    100% {width: 40%}
 }
 @keyframes photoshop {
     0% {width: 0;}
-    100% {width: 30%}
+    100% {width: 40%}
 }
 @keyframes javascript {
     0% {width: 0;}
-    100% {width: 10%}
+    100% {width: 20%}
 }
 /* Skill levels end */
 
