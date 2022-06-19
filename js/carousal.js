@@ -9,7 +9,6 @@ showSlides(1, 0);
 showSlides(1, 1);
 showSlides(1, 2);
 
-
 function plusSlides(n, slideshownumber)
 {
     slideIndex[slideshownumber] = slideIndex[slideshownumber] + n;
